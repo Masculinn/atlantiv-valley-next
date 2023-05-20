@@ -1,0 +1,179 @@
+#section_font {
+    font-family: 'Manrope', sans-serif;
+  }
+
+  /*Animations*/
+
+
+#marquee1 {
+    animation: mq1 15s linear infinite;
+  }
+  
+  #marquee2 {
+    animation: mq2 15s linear infinite; 
+  }
+  
+  #arr {
+    animation: moveBottom 2s infinite;
+  }
+  
+  @keyframes mq1   {
+    0% {
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes mq2 {
+    0% {
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }  
+  }
+  
+  @keyframes moveBottom {
+    0% , 100% {
+      padding-top:0 ;
+    }
+    50% {
+      padding-top: 10px;
+    }
+  }
+  
+  .loader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    animation: pulsOut 1.8s ease-in-out infinite;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.75));
+  }
+  .loader:before {
+    width: 100%;
+    padding-bottom: 100%;
+    box-shadow: inset 0 0 0 1rem #000;
+    animation-name: pulsIn;
+  }
+  .loader:after {
+    width: calc(100% - 2rem);
+    padding-bottom: calc(100% - 2rem);
+    box-shadow: 0 0 0 0 #000;
+  }
+  
+  @keyframes pulsIn {
+    0% {
+      box-shadow: inset 0 0 0 1rem #000;
+      opacity: 1;
+    }
+    50%, 100% {
+      box-shadow: inset 0 0 0 0 #000;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes pulsOut {
+    0%, 50% {
+      box-shadow: 0 0 0 0 #000;
+      opacity: 0;
+    }
+    100% {
+      box-shadow: 0 0 0 1rem #000;
+      opacity: 1;
+    }
+  }
+  
+  #fire {
+    animation: fire 1s infinite;
+  }
+  
+  @keyframes fire {
+    0%,100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  /* ----------- */
+  
+  
+  /* Extras */
+  
+  #try {
+    background-size: 50%;
+  }
+  .swal-overlay {
+    backdrop-filter: blur(10px);
+  }
+  
+  .swal-modal {
+    background-color: transparent;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+  } 
+  
+  .swal-button {
+    display: none;
+  }
+  
+  .swal-text {
+    color: white;
+  }
+  
+  .swal-title {
+    color: white;
+  }
+  
+  #scrollUp {
+    perspective: 380px;
+  }
+  
+  
+  #map {
+    height: 400px;
+    width: 50vw;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #map {
+      height: 300px;
+      margin-top: 2rem;
+      width: 100vw;
+    }
+  }
+  
+  #referances {
+    --tw-scale-x: .85;
+    --tw-scale-y: .85;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  
+  #mail {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* -------- */
+
+#whobg {
+  background-image: url("../assets/images/main/bg-mountain.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+

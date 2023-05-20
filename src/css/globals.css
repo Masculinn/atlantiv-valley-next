@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-image: url('/public_assets/main-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
+  font-family: 'Vogue', sans-serif;
+}
+/* ----------- */
+
+
+/*ScrollBar plugins*/
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ----------- */
+
+
+
+/*Font Directories*/
+@font-face {
+  font-family: 'Vogue';
+  src: url('/public_assets/fonts/Vogue.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('/public_assets/fonts/Manrope.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Marked';
+  src: url('/public_assets/fonts/Marked.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'def';
+  src: url('/public_assets/fonts/default.ttf') format('truetype');
+}
+
+h1, #vogue {
+  font-family: 'Marked', sans-serif;
+}
+
+#section_font {
+  font-family: 'Manrope', sans-serif;
+}
+
+#def {
+  font-family: 'def', sans-serif;
+}
+
+/*----------------*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
