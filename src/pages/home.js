@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 
 import Slogan from "@/components/Slogan"
 import Entrance from "@/components/Entrance";
-// import World from "@/components/World";
+import World from "@/components/World";
 import Stats from "@/components/Stats";
 import Partners from "@/components/Partners";
 import Blog from "@/components/Blog";
@@ -125,7 +125,7 @@ export default function HomePage() {
           bgColor={"bg-slate-950"}
           route={"/incentive"}
         />
-        {/* <World /> */}
+        <World /> 
         <Stats />
         <Partners props={partnersData} images={partnersDataImages}/>
         <Blog blogs={blogs}/>

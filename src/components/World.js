@@ -5,7 +5,11 @@ import { animated, useSpring } from 'react-spring';
 import dynamic from 'next/dynamic';
 import "leaflet/dist/leaflet.css";
 
-const L = dynamic(() => import('react-leaflet'), { ssr: false });
+const MapContainer = dynamic(() => import('react-leaflet').then(module => module.MapContainer), { ssr: false });
+const TileLayer = dynamic(() => import('react-leaflet').then(module => module.TileLayer), { ssr: false });
+const Marker = dynamic(() => import('react-leaflet').then(module => module.Marker), { ssr: false });
+const Popup = dynamic(() => import('react-leaflet').then(module => module.Popup), { ssr: false });
+const Icon = dynamic(() => import('./Icon'), { ssr: false });
 
 function Map() {
   const [hoveredMarker, setHoveredMarker] = useState(null);
@@ -16,25 +20,14 @@ function Map() {
     { lat: 52.225651199978536, lng: 21.013623195334112, name: 'Atlantic Valley Varşova / Polonya' }
   ];
 
-  const markerIcon = L && new L.Icon({
-    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-    iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-    shadowSize: [41, 41],
-    shadowAnchor: [12, 41]
-  });
-
   return (
-    <L.MapContainer center={[60.6974, -28.3234]} zoom={1.5} id='map'>
-      <L.TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+    <MapContainer center={[60.6974, -28.3234]} zoom={1.5} id='map'>
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {officeLocations.map((location, index) => (
-        <L.Marker
+        <Marker
           key={index}
           position={[location.lat, location.lng]}
-          icon={markerIcon}
+          icon={Icon}
           eventHandlers={{
             mouseover: () => {
               setHoveredMarker(index);
@@ -44,10 +37,10 @@ function Map() {
             },
           }}
         >
-          {(hoveredMarker === index) && <L.Popup autoClose={true} autoPan={true}>{location.name}</L.Popup>}
-        </L.Marker>
+          {(hoveredMarker === index) && <Popup autoClose={true} autoPan={true}>{location.name}</Popup>}
+        </Marker>
       ))}
-    </L.MapContainer>
+    </MapContainer>
   );
 }
 
