@@ -13,6 +13,7 @@ import Ousoma from "../assets/images/partners/Ousoma.jpeg"
 import Ozan from "../assets/images/partners/Ozan.jpeg"
 import Gokce from "../assets/images/partners/Gokce.jpeg"
 import DevBurak from "../assets/images/partners/DevBurak.jpg"
+import ziya from "../assets/images/partners/ziya.png"
 
 const dataArr = [
   {
@@ -61,7 +62,7 @@ const dataArr = [
     jobTitle: 'Ortak, Varşova',
     image: Mukan,
     linkedinUrl: "https://www.linkedin.com/in/mukan-olcayto-a2b3811b0/",
-    bio:"Mukan Olcayto, Atlantic Valley Partners'da yetenekli bir proje yöneticisidir ve e-ticaret istatistikleri konusunda uzmanlığa sahiptir. Birçok projeyi ve toplantıyı başarıyla yönetmiştir. Şirketlerin markalaşma ve Avrupa'da şirketleşmesinde proje kordinatörüdür. Aynı zamanda Atlantic Valley Dijital'in Grafik alanından sorumludur."
+    bio:"Mukan Olcayto, Atlantic Valley Partners'da yetenekli bir proje yöneticisidir ve e-ticaret istatistikleri konusunda uzmanlığa sahiptir. Birçok projeyi ve toplantıyı başarıyla yönetmiştir. Şirketlerin markalaşma ve Avrupa'da şirketleşmesinde proje kordinatörüdür. Aynı zamanda Atlantic Valley Dijital alanında Grafik alanından sorumludur."
   },
   {
     name: 'Burak Bilen',
@@ -70,6 +71,14 @@ const dataArr = [
     image: DevBurak,
     linkedinUrl: "https://www.linkedin.com/in/burak-bilen-483772227/",
     bio: "Burak Bilen, Atlantic Valley Partners'ta bir IT Proje Yöneticisidir ve çeşitli projeleri yönetmektedir. Yapay zeka ve yeni teknolojiler konusundaki güçlü uzmanlığıyla, şirketin dijital çözümlerine yenilik ve değer katmaktadır. Ayrıca, Burak, Atlantic Valley Digital'in IT operasyonlarından sorumludur."
+  },  
+  {
+    name: 'Ziya Samet Yağmur',
+    imgAlt: "Atlantic Valley Ziya Samet Yağmur",
+    jobTitle: 'Ortak, Varşova',
+    image: ziya,
+    linkedinUrl: "",
+    bio: "Ziya Samet Yağmur, Atlantic Valley Partners'da , operasyonel verimlilik sağlama ve pazarlama stratejileri geliştirme hususlarında görev almaktadır.  Küresel pazarda rekabet etmek, uluslararası işbirlikleri kurmak ve fırsatları değerlendirmek üzere küresel bir perspektife sahiptir. "
   },
 ]
 

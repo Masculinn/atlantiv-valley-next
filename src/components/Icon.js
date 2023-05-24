@@ -1,3 +1,4 @@
+import React from "react";
 import Z from "leaflet";
 
 export default new Z.Icon({

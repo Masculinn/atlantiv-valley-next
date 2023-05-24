@@ -7,6 +7,15 @@ import Logo from "../assets/images/main/logo-white.png";
 import FooterComponent from "./FooterComponent";
 
 const Footer = () => {
+  const data = {
+    number: '+48 731 384 284',
+    message: 'Merhaba Özay Bey,'
+}
+const redirectToWhatsApp = () => {
+    const encodedMessage = encodeURIComponent(data.message);
+    const url = `https://api.whatsapp.com/send?text=${encodedMessage}&phone=${data.number}`;
+    window.location.href = url;
+};
   return (
     <footer className="bg-gray-900 text-white pt-20 pb-12" id="section_font">
       <div className="container mx-auto flex flex-wrap">
@@ -60,20 +69,28 @@ const Footer = () => {
 
           <div className=" justify-between mt-12">
             <ul className="inline-flex">
-              <li>
-                  <FaLinkedin size={28} className="text-white transition-all duration-300 hover:text-slate-300"/>
-              </li>
-              <li>
-                  <FaInstagram size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
-              </li>
-              <li>
-                  <FaFacebook size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300 "/>
-              </li>
-              <li>
-                  <FaYoutube size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
-              </li>
-              <li>
-                  <FaWhatsapp size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/atlantic-valley-partners/">
+                <li>
+                    <FaLinkedin size={28} className="text-white transition-all duration-300 hover:text-slate-300"/>
+                </li>
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/avrupada_yatirim/">
+                <li>
+                    <FaInstagram size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
+                </li>
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100091451207802">
+                <li>
+                    <FaFacebook size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300 "/>
+                </li>
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@AtlanticValleyPartners">
+                <li>
+                    <FaYoutube size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
+                </li>                
+              </a> 
+              <li onClick={redirectToWhatsApp}>
+                <FaWhatsapp size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
               </li>
             </ul>
           </div>
