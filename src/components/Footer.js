@@ -12,6 +12,7 @@ const Footer = () => {
     message: 'Merhaba Özay Bey,'
 }
 const redirectToWhatsApp = () => {
+  
     const encodedMessage = encodeURIComponent(data.message);
     const url = `https://api.whatsapp.com/send?text=${encodedMessage}&phone=${data.number}`;
     window.location.href = url;
@@ -66,27 +67,26 @@ const redirectToWhatsApp = () => {
               <span className="text-white text-md pl-2 hover:text-white-900" id="section_font">Marszalkowska 83</span>  
             </a>
             </div>
-
           <div className=" justify-between mt-12">
             <ul className="inline-flex">
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/atlantic-valley-partners/">
                 <li>
-                    <FaLinkedin size={28} className="text-white transition-all duration-300 hover:text-slate-300"/>
+                  <FaLinkedin size={28} className="text-white transition-all duration-300 hover:text-slate-300"/>
                 </li>
               </a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/avrupada_yatirim/">
                 <li>
-                    <FaInstagram size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
+                  <FaInstagram size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
                 </li>
               </a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100091451207802">
                 <li>
-                    <FaFacebook size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300 "/>
+                  <FaFacebook size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300 "/>
                 </li>
               </a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@AtlanticValleyPartners">
                 <li>
-                    <FaYoutube size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
+                  <FaYoutube size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
                 </li>                
               </a> 
               <li onClick={redirectToWhatsApp}>
