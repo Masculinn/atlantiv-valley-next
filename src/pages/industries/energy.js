@@ -2,6 +2,9 @@ import "../../css/globals.css"
 import "../../css/app.css"
 import carewind from "../../assets/images/industries/carewind_ref.png"
 import masis from "../../assets/images/industries/masis_ref.png"
+import enerji1 from "../../assets/images/blogs/enerji1.png"
+import enerji2 from "../../assets/images/blogs/enerji2.png"
+import avrupadayatirim from "../../assets/images/blogs/avrupadayatirim.png"
 
 import React from 'react';
 import Head from "next/head";
@@ -47,7 +50,7 @@ export default function Energy() {
             title: "Atlantic Valley & MASIS Partnerliği",
             des: "MASIS'in katılımıyla lider enerji etkinliği",
             imgAlt: "MASIS'in katılımı",
-            imgSource:"https://media.licdn.com/dms/image/C4D22AQE08CzY6Rotig/feedshare-shrink_1280/0/1669647187515?e=1685577600&v=beta&t=cjR6ykSvI0LiouceILBaTtIobkhTC2rLeh1jC5HQsyU",
+            imgSource:enerji1,
             sector: "Enerji",
             linkedinUrl:"https://www.linkedin.com/posts/atlantic-valley-partners_project-mining-commerce-activity-7003007881717387264-3Kpz?utm_source=share&utm_medium=member_desktop"
         },
@@ -55,7 +58,7 @@ export default function Energy() {
             title: "Atlantic Valley & TAURON Partnerliği",
             des: "TAURON firmasına bizleri ağırladıkları için teşekkür ederiz",
             imgAlt: "TAURON Partnerliği",
-            imgSource: "https://media.licdn.com/dms/image/C4D22AQFo7CVnjo4Bfg/feedshare-shrink_1280/0/1671925325795?e=1685577600&v=beta&t=Cu-87souS8jV8rnz4KkwHIU_OjRRnYyPkoR7Ugm7bUQ",
+            imgSource:enerji2,
             sector: "Enerji",
             linkedinUrl:"https://www.linkedin.com/posts/atlantic-valley-partners_event-opportunities-project-activity-7012563088893702144-EYoK?utm_source=share&utm_medium=member_desktop"
         },
@@ -63,7 +66,7 @@ export default function Energy() {
             title: "Atlantic Valley",
             des: "Avrupa yatırımlarınız için merkez ülke olarak Polonya'ı tavsiye etmemizin bir çok sebebi var...",
             imgAlt: "Avrupa yatırım",
-            imgSource: "https://media.licdn.com/dms/image/D4D22AQEmyFmvKQV8Gw/feedshare-shrink_2048_1536/0/1682516507283?e=1685577600&v=beta&t=iIhj8SkKEMfeDNy7QNeOGGD6uvwEiRtujXlP1sMGJX0",
+            imgSource:avrupadayatirim,
             sector: "Avrupa'da yatırım",
             linkedinUrl:"https://www.linkedin.com/posts/atlantic-valley-partners_teknoloji-ekonomi-enerji-activity-7056985720854315008-x3um?utm_source=share&utm_medium=member_desktop"
         }

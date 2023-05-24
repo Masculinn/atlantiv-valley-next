@@ -1,35 +1,22 @@
 'use client'
 
-import React, {useState, useEffect, useRef}from 'react';
+import React, {useEffect, useState, useRef }from 'react';
 import { animated, useSpring } from 'react-spring';
-import { MapContainer, TileLayer,Popup,Marker} from 'react-leaflet'
-import L from 'leaflet';
+import dynamic from 'next/dynamic';
 import "leaflet/dist/leaflet.css";
 
+const L = dynamic(() => import('react-leaflet'), { ssr: false });
+
 function Map() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const zoomLevel = windowWidth < 768 ? 1 : 1.5;
-  const [hoveredMarker, setHoveredMarker] = useState(null)
+  const [hoveredMarker, setHoveredMarker] = useState(null);
   const officeLocations = [
     { lat: 42.69744437111342, lng: 23.323370269239742, name: 'Atlantic Valley Sofya / Bulgaristan' },
     { lat: 41.002448398192776, lng: 29.053941082517355, name: 'Atlantic Valley İstanbul / Türkiye' },
     { lat: 43.065193154206334, lng: -107.1578067176503, name: 'Atlantic Valley Wyoming / ABD' },
     { lat: 52.225651199978536, lng: 21.013623195334112, name: 'Atlantic Valley Varşova / Polonya' }
   ];
-  const markerIcon = new L.Icon({
+
+  const markerIcon = L && new L.Icon({
     iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
     iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
     iconSize: [25, 41],
@@ -39,27 +26,31 @@ function Map() {
     shadowSize: [41, 41],
     shadowAnchor: [12, 41]
   });
-  
+
   return (
-    <MapContainer center={[60.6974, -28.3234]} zoom={zoomLevel}  id='map'>
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+    <L.MapContainer center={[60.6974, -28.3234]} zoom={1.5} id='map'>
+      <L.TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {officeLocations.map((location, index) => (
-        <Marker key={index} position={[location.lat, location.lng]} icon={markerIcon} 
-        eventHandlers={{
-          mouseover: () => {
-            setHoveredMarker(index);
-          },
-          mouseout: () => {
-            setHoveredMarker(null);
-          },
-        }}
-        > 
-          {(hoveredMarker === index) && <Popup autoClose={true} autoPan={true}>{location.name}</Popup>}
-        </Marker>
+        <L.Marker
+          key={index}
+          position={[location.lat, location.lng]}
+          icon={markerIcon}
+          eventHandlers={{
+            mouseover: () => {
+              setHoveredMarker(index);
+            },
+            mouseout: () => {
+              setHoveredMarker(null);
+            },
+          }}
+        >
+          {(hoveredMarker === index) && <L.Popup autoClose={true} autoPan={true}>{location.name}</L.Popup>}
+        </L.Marker>
       ))}
-    </MapContainer>
+    </L.MapContainer>
   );
 }
+
 
 export default function World() {
     const ref = useRef(null);

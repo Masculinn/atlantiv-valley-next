@@ -114,13 +114,13 @@ export default function DigitalMarketing() {
             <Slogan     
                  title={"Avrupada'ki faaliyetlerinizin %60'ının devlet desteği ile karşılandığını biliyor muydunuz?"}
                  textSize={"5"}
-                 textColor1={`text-white`}
-                 textColor2={"text-white"}
-                 buttonColor={"bg-white"}
-                 buttonTextColor={"text-black"}
+                 textColor1={`text-black`}
+                 textColor2={"text-black"}
+                 buttonColor={"bg-black"}
+                 buttonTextColor={"text-white"}
                  des={"Size en uygun devlet teşviklerinin neler olduğunu öğrenmek ister misiniz?"}
                  buttonText={"Devlet Teşvikleri"}
-                 bgColor={"bg-slate-950"}
+                 bgColor={"bg-transparent"}
                  route={"/incentive"}
               />
               <Steps steps={steps}/>

@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
+  output: 'export',
+  // Optional: Add a trailing slash to all paths `/about` -> `/about/`
+  // trailingSlash: true,
+  // Optional: Change the output directory `out` -> `dist`
+  // distDir: 'dist',
+  images: { unoptimized: true },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(mp4|webm|ogg)$/,
@@ -18,3 +24,4 @@ module.exports = {
   },
 };
 
+module.exports = nextConfig;

@@ -77,30 +77,29 @@ export default function InformationTechnology() {
     const partnersData = {
       subHeader: "Kullandığımız Teknolojiler'den Bazıları",
       header: "Bu yolda, güçlü, yenilikçi ve en yeni teknolojileri sizlerle buluşturuyoruz",
-      images: [
-        {
-          img:node,
-          imgAlt: "nodejs"
-        },
-        {
-          img: next,
-          imgAlt: "nextjs"
-        },
-        {
-          img: mysql,
-          imgAlt: "mysql"
-        },
-        {
-          img: react,
-          imgAlt: "react"
-        },
-        {
-          img: tailwind,
-          imgAlt: "tailwind css"
-        }
-      ]
     }
-    
+    const partnersDataImages = [
+      {
+        img:node,
+        imgAlt: "nodejs"
+      },
+      {
+        img: next,
+        imgAlt: "nextjs"
+      },
+      {
+        img: mysql,
+        imgAlt: "mysql"
+      },
+      {
+        img: react,
+        imgAlt: "react"
+      },
+      {
+        img: tailwind,
+        imgAlt: "tailwind css"
+      }
+    ]
     const blogs = [
       {
           title: "Atlantic Valley Dijital & chat-GPT",
@@ -145,10 +144,10 @@ export default function InformationTechnology() {
     return (
         <div>
             <Head>
-                <title>Atlantic Valley | Bilgi Teknolojileri</title>
-                {seo.map((val,index) => {
-                    return <meta key={index} {...val} />
-                })}
+              <title>Atlantic Valley | Bilgi Teknolojileri</title>
+              {seo.map((val,index) => {
+                  return <meta key={index} {...val} />
+              })}
             </Head>
             <Header />
             <ButtonUp />
@@ -159,7 +158,7 @@ export default function InformationTechnology() {
                 buttonText="Referanslarımız"
                 textSize ={6}
                 on={true}
-                buttonLink = {"/referances"}
+                buttonLink = {"/all-referances"}
             />   
             <MainHeader 
                 top="IT Hizmetleri" 
@@ -175,7 +174,7 @@ export default function InformationTechnology() {
             />
             <TrailText texts={texts}/>
             <Steps steps={steps} />
-            <Partners images={partnersData.images} props={partnersData}/>
+            <Partners images={partnersDataImages} props={partnersData}/>
             <Referances props={referances} />
             <Blog blogs={blogs} />
             <Footer />

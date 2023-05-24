@@ -1,7 +1,8 @@
 'use client'
 
 import React,{useEffect, useRef, useState} from 'react'
-import CountUp from 'react-countup';
+import dynamic from 'next/dynamic';
+const CountUp = dynamic(() => import('react-countup'), { ssr: false });
 
 const Stats = () => {
     const ref = useRef(null);

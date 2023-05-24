@@ -1,12 +1,11 @@
 import Head from "next/head";
 
-import React from "react"
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
 import Slogan from "@/components/Slogan"
 import Entrance from "@/components/Entrance";
-import World from "@/components/World";
+// import World from "@/components/World";
 import Stats from "@/components/Stats";
 import Partners from "@/components/Partners";
 import Blog from "@/components/Blog";
@@ -46,7 +45,7 @@ export default function HomePage() {
         linkedinUrl:"https://www.linkedin.com/posts/atlantic-valley-partners_event-opportunities-project-activity-7012563088893702144-EYoK?utm_source=share&utm_medium=member_desktop"
     },
     {
-        title: "Atlantic Valley",
+        title: "Atlantic Vaxlley",
         des: "Avrupa yatırımlarınız için merkez ülke olarak Polonya'ı tavsiye etmemizin bir çok sebebi var...",
         imgAlt: "Avrupa yatırım",
         imgSource: avrupadayatirim,
@@ -80,6 +79,28 @@ export default function HomePage() {
       }
     ]
   }
+  const partnersDataImages = [
+      {
+        img: carewind,
+        imgAlt: "carewind"
+      },
+      {
+        img: edm,
+        imgAlt: "edm"
+      },
+      {
+        img: masis,
+        imgAlt: "masis"
+      },
+      {
+        img: onur,
+        imgAlt: "onur ayran"
+      },
+      {
+        img: etsy,
+        imgAlt: "etsy"
+      }
+  ]
     return (
       <div>
         <Head>
@@ -104,9 +125,9 @@ export default function HomePage() {
           bgColor={"bg-slate-950"}
           route={"/incentive"}
         />
-        <World />
+        {/* <World /> */}
         <Stats />
-        <Partners images={partnersData.images} props={partnersData}/>
+        <Partners props={partnersData} images={partnersDataImages}/>
         <Blog blogs={blogs}/>
         <ButtonUp />
         <Footer />

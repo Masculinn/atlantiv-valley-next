@@ -4,7 +4,7 @@ import React,{useEffect, useRef, useState} from 'react'
 import { useSpring, animated } from 'react-spring';
 import Image from 'next/image';
 
-export default function Partners({props}) {
+export default function Partners(props) {
     const ref = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
   
@@ -33,8 +33,8 @@ export default function Partners({props}) {
         <animated.div className="text-black justify-center items-center flex bg-transparent w-full h-screen sm:mt-20 mt-20 lg:mt-0" style={animation} ref={ref}>
             <div className="">
                 <div className=" bg-transparent p-5  text-center " id="section_font">
-                    <p className=" lg:text-lg md:text-m sm:text-sm text-sm text-slate-600">-{props.subHeader}-</p>
-                    <h2 className="tracking-tight lg:text-3xl md:text-xl sm:text-lg text-2xl text-black text-center">{props.header}</h2>            
+                    <p className=" lg:text-lg md:text-m sm:text-sm text-sm text-slate-600">-{props.props.subHeader}-</p>
+                    <h2 className="tracking-tight lg:text-3xl md:text-xl sm:text-lg text-2xl text-black text-center">{props.props.header}</h2>            
                 </div>
                 <div className="">
                     <div className="relative inline-flex overflow-x-hidden">
