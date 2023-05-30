@@ -32,9 +32,9 @@ const ContactUsComponent = () => {
   };
     return (
         <animated.div className="lg:h-screen lg:w-full h-auto w-full bg-transparent" style={animation}>
-        <div className="relative lg:flex md:hidden sm:hidden hidden w-full h-1/2 text-white justify-center items-center">
+        <div className=" lg:flex md:hidden sm:hidden hidden w-full h-1/2 text-white justify-center items-center">
           <h1 className="absolute text-5xl bg-black text-white px-16 py-16 bg-opacity-50 rounded-lg" id="Vogue">Atlantic Valley & Partners</h1>
-          <Image src={BgImage} alt="Atlantic Valley" className=" relative -z-50"/>
+          <Image src={BgImage} alt="Atlantic Valley" className=" -z-50 sticky"/>
         </div>
         <div className="w-full h-1/2 bg-blue-600 absolute flex flex-wrap">
           <div className="h-full lg:w-1/3 md:w-full w-full bg-blue-800 transition-all duration-500 hover:scale-105">

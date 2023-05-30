@@ -1,12 +1,12 @@
 import "../css/globals.css"
 import "../css/app.css"
+
 import carewind from "../assets/images/industries/carewind_ref.png"
 import edm from "../assets/images/industries/edm_ref.png"
 import masis from "../assets/images/industries/masis_ref.png"
 import onur from "../assets/images/industries/onur_ayran_ref.png"
 import sakura from "../assets/images/industries/sakura_ref.png"
 import santa from "../assets/images/industries/santa_ref.png"
-
 
 import React from "react";
 import Head from "next/head";

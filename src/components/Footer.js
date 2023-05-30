@@ -7,16 +7,6 @@ import Logo from "../assets/images/main/logo-white.png";
 import FooterComponent from "./FooterComponent";
 
 const Footer = () => {
-  const data = {
-    number: '+48 731 384 284',
-    message: 'Merhaba Özay Bey,'
-}
-const redirectToWhatsApp = () => {
-  
-    const encodedMessage = encodeURIComponent(data.message);
-    const url = `https://api.whatsapp.com/send?text=${encodedMessage}&phone=${data.number}`;
-    window.location.href = url;
-};
   return (
     <footer className="bg-gray-900 text-white pt-20 pb-12" id="section_font">
       <div className="container mx-auto flex flex-wrap">
@@ -24,7 +14,7 @@ const redirectToWhatsApp = () => {
           <h3 className="text-lg font-bold mb-4 underline underline-offset-4">Hakkımızda</h3>
           <ul className="list-reset">
             <Link href={"/whoweare"}><li className="mb-2 hover:text-gray-400 text-slate-300">Partnerlerimiz</li></Link>              
-            <Link href={"https://www.linkedin.com/company/atlantic-valley-partners/"}><li className="mb-2 hover:text-gray-400 text-slate-300">Referanslarımız</li></Link>              
+            <Link href={"/all-referances"}><li className="mb-2 hover:text-gray-400 text-slate-300">Referanslarımız</li></Link>              
             <a target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/company/atlantic-valley-partners/"}><li className="mb-2 hover:text-gray-400 text-slate-300">Kariyer</li></a>              
           </ul>
         </div>
@@ -55,16 +45,11 @@ const redirectToWhatsApp = () => {
         <div className="w-full md:w-1/4 lg:w-1/5 px-4 mb-8 justify-center items-center">
           <center>
           <Link href={"/"}>
-            <Image src={Logo} alt="Atlantic Valley" className="lg:w-full lg:h-auto md:w-full md:h-auto sm:w-full sm:h-auto h-36 w-auto " />
+            <Image src={Logo} alt="Atlantic Valley" className="lg:w-full lg:h-auto md:w-full md:h-auto sm:w-full sm:h-auto h-24 w-auto " />
           </Link>
           <div className="mt-4 justify-center flex-wrap flex items-center">
-            <strong href={"https://chatwith.io/s/mukanolcayto"} target="_blank" rel="noopener noreferrer" className=" flex items-center">
-              <MdPhone size={28} className=" text-white" />
-              <span className="text-white text-md pl-2 hover:text-white-900" id="section_font">+48 731 384 284</span>  
-            </strong>
-            <a href={"https://www.google.com/maps/@52.2190047,21.051371,13z"} target="_blank" rel="noopener noreferrer" className=" flex items-center pt-2">
-              <MdLocationOn size={28} className=" text-white" />
-              <span className="text-white text-md pl-2 hover:text-white-900" id="section_font">Marszalkowska 83</span>  
+            <a href={"https://www.google.com/maps/search/?api=1&query=52.225651199978536,21.013623195334112"} target="_blank" rel="noopener noreferrer" className=" items-center pt-2">
+              <span className="text-white text-md pl-2 hover:text-white-900" id="section_font">Marszałkowska 83\38, 00-683 Warszawa</span>  
             </a>
             </div>
           <div className=" justify-between mt-12">
@@ -89,7 +74,7 @@ const redirectToWhatsApp = () => {
                   <FaYoutube size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
                 </li>                
               </a> 
-              <li onClick={redirectToWhatsApp}>
+              <li>
                 <FaWhatsapp size={28} className="mx-1 text-white transition-all duration-300 hover:text-slate-300"/>
               </li>
             </ul>

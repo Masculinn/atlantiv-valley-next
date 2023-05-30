@@ -91,6 +91,7 @@ const PersonCard = ({ name, jobTitle, image, linkedinUrl, bio, imgAlt}) => {
             <Image
               className="h-48 w-48 rounded-full object-cover shadow-md transition-all duration-300 hover:grayscale-0 grayscale"
               src={image}
+              placeholder="blur"
               alt={imgAlt}
             />
           </div>

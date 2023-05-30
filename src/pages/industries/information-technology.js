@@ -27,13 +27,30 @@ import Blog from "@/components/Blog"
 export default function InformationTechnology() {
   const seo = [
     {
-      name: "IT hizmetleri danışmanlığı",
+      name: "description",
+      content: "Bilgi hizmetlerimiz, işletmenizin büyümesine yardımcı olacak bilgi, araçlar ve teknolojiler sunar. İhtiyaçlarınızı karşılamak için esnek, özelleştirilebilir çözümler sunuyoruz"
+    },
+    {
+      name: "keywords",
       content: "Bilgi teknolojileri BT hizmetleri Yazılım geliştirme Web geliştirme Mobil uygulama geliştirme Veritabanı yönetimi Ağ güvenliği Bulut bilişim Büyük veri analitiği Yapay zeka Makine öğrenimi Siber güvenlik Network altyapısı Web hosting Veri merkezi IT danışmanlığı Yazılım testi Proje yönetimi Teknoloji eğitimi Dijital dönüşüm Yatırım danışmanlığı Avrupa finans piyasaları portföy yönetimi Varlık yönetimi Yatırım stratejileri Risk yönetimi Yatırım fırsatları Piyasa analizi Hisse senedi piyasaları Tahvil ve bono piyasaları Döviz piyasaları Gayrimenkul yatırımları avrupa'da yatırım avrupa'da danışmanlık yatırım danışmanlığı  Avrupa'da şirket kurma danışmanlığı Avrupa'da iş kurma Şirket kurma süreci Avrupa'da şirket tescili Avrupa pazarına giriş Avrupa iş ortamı Yurtdışında şirket kurma Şirket kurulumu için danışmanlık hizmetleri Vergi avantajları Hukuki gereklilikler İş planı hazırlama Yatırım fırsatları Avrupa Uluslararası işletme hukuku Şirket türleri Bölgesel iş stratejileri Avrupa'da pazar araştırması Rekabet analizi İş büyütme stratejileri Avrupa'da pazarlama ve reklamcılık Yerel düzenlemeler ve uyum",
     },
     {
-      name: "IT hizmetleri",
-      content: "Bilgi teknolojileri BT hizmetleri Yazılım geliştirme Web geliştirme Mobil uygulama geliştirme Veritabanı yönetimi Ağ güvenliği Bulut bilişim Büyük veri analitiği Yapay zeka Makine öğrenimi Siber güvenlik Network altyapısı Web hosting Veri merkezi IT danışmanlığı Yazılım testi Proje yönetimi Teknoloji eğitimi Dijital dönüşüm Yatırım danışmanlığı Avrupa finans piyasaları portföy yönetimi Varlık yönetimi Yatırım stratejileri Risk yönetimi Yatırım fırsatları Piyasa analizi Hisse senedi piyasaları Tahvil ve bono piyasaları Döviz piyasaları Gayrimenkul yatırımları avrupa'da yatırım avrupa'da danışmanlık yatırım danışmanlığı  Avrupa'da şirket kurma danışmanlığı Avrupa'da iş kurma Şirket kurma süreci Avrupa'da şirket tescili Avrupa pazarına giriş Avrupa iş ortamı Yurtdışında şirket kurma Şirket kurulumu için danışmanlık hizmetleri Vergi avantajları Hukuki gereklilikler İş planı hazırlama Yatırım fırsatları Avrupa Uluslararası işletme hukuku Şirket türleri Bölgesel iş stratejileri Avrupa'da pazar araştırması Rekabet analizi İş büyütme stratejileri Avrupa'da pazarlama ve reklamcılık Yerel düzenlemeler ve uyum",
+      name:"robots",
+      content: "index, follow"
     },
+    {
+      name:"geo.country",
+      content: "TR",
+    },
+    {
+      name:"geo.placename",
+      content: "Turkey",
+    },          
+    {
+      name:"author",
+      content: "Atlantic Valley Partners",
+    },  
+
   ]
     const steps = [
         {

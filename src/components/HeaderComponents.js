@@ -120,7 +120,7 @@ export default function Header() {
           <Link id='section_font' href={"/investing"} className="block mt-4 pt-2.5 lg:inline-block lg:mt-0 text-black hover:text-blue-950 mr-10 float-right">
           AVRUPADA YATIRIM
           </Link>
-          <Link id='section_font' href={"/home"} className="block mt-4 pt-2.5 lg:inline-block lg:mt-0 text-black hover:text-blue-950 mr-10 float-right" 
+          <Link id='section_font' href={"/"} className="block mt-4 pt-2.5 lg:inline-block lg:mt-0 text-black hover:text-blue-950 mr-10 float-right" 
             onMouseEnter={() => {
                 {(window.innerWidth > 1080) && setBar(true)}
             }}

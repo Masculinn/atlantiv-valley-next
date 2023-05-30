@@ -47,9 +47,9 @@ const MainHeader = (props) => {
                   </a>
                 </button>            
               ) : (
-                 <Link href={props.buttonLink}>
-                 <button className={`h-20 mx-5 my-5 text-center w-52 text-xl font-thin transform transition-all duration-200 hover:scale-105  rounded-full ${props.mode ? 'bg-white text-black hover:bg-black  hover:text-white ' : 'hover:bg-transparent hover:border hover:border-black hover:text-black bg-black text-white'}`} id='section_font' style={{display: props.on ? 'block' : 'none'}}>{props.buttonText}</button>            
-               </Link>
+                <Link href={props.buttonLink}>
+                  <button className={`lg:h-20 h-16 mx-5 my-5 text-center lg:w-52 w-48 text-xl font-thin transform transition-all duration-200 hover:scale-105  rounded-full ${props.mode ? 'bg-white text-black hover:bg-black  hover:text-white ' : 'hover:bg-transparent hover:border hover:border-black hover:text-black bg-black text-white'}`} id='section_font' style={{display: props.on ? 'block' : 'none'}}>{props.buttonText}  →</button>            
+                </Link>
               )}
               <h2 className='hid my-20 text-5xl' id='arr' 
                   onClick={() => {}} style={{display: props.arrow ? 'block' : 'none'}}>↓</h2>

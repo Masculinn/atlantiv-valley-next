@@ -43,7 +43,7 @@ export default function Investing() {
         onMouseLeave={() => setisShow(false)}
         >
         <a
-            href={'https://drive.google.com/uc?export=download&id=1a3aR-k6y9hZL9iq7GVGTzqti5HBAOpfJ'}
+            href={'/investment.pdf'}
             download
             className="text-6xl text-white cursor-pointer hover:scale-125 transition-transform duration-300"
             id="section_font"

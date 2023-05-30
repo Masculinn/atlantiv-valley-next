@@ -3,13 +3,13 @@
 import React, {useEffect, useState, useRef }from 'react';
 import { animated, useSpring } from 'react-spring';
 import dynamic from 'next/dynamic';
-import "leaflet/dist/leaflet.css";
+import 'leaflet/dist/leaflet.css';
+
 
 const MapContainer = dynamic(() => import('react-leaflet').then(module => module.MapContainer), { ssr: false });
 const TileLayer = dynamic(() => import('react-leaflet').then(module => module.TileLayer), { ssr: false });
 const Marker = dynamic(() => import('react-leaflet').then(module => module.Marker), { ssr: false });
 const Popup = dynamic(() => import('react-leaflet').then(module => module.Popup), { ssr: false });
-const Icon = dynamic(() => import('./Icon'), { ssr: false });
 
 function Map() {
   const [hoveredMarker, setHoveredMarker] = useState(null);
@@ -27,7 +27,6 @@ function Map() {
         <Marker
           key={index}
           position={[location.lat, location.lng]}
-          icon={Icon}
           eventHandlers={{
             mouseover: () => {
               setHoveredMarker(index);
@@ -67,22 +66,22 @@ export default function World() {
   const officeLocations = [
     {
       location: 'ABD / Wyoming',
-      tel: '+1 (555) 123-4567',
+      tel: '',
       def: 'E-Ticaret Operasyon Merkezi'
     },
     {
       location: 'Polonya / Varşova',
-      tel: '+44 20 1234 5678',
+      tel: '+48 731 384 284',
       def: 'Avrupa Yatırım Danışmanlık Ofisi'
     },
     {
       location: 'Türkiye / İstanbul',
-      tel: '+81 3 1234 5678',
+      tel: '+90 537 405 11 68',
       def: 'Türkiye Faaliyetleri Yatırım Merkezi'
     },
     {
       location: 'Bulgaristan / Sofya',
-      tel: '+61 2 1234 5678',
+      tel: '',
       def: 'Operasyonel Faaliyetler Şubesi'
     }
   ];
@@ -116,8 +115,17 @@ export default function World() {
             <h2 className='mb-2 text-gray-500'>{def}</h2>
             <div className="items-center -mx-3 mb-4 ">
               <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
-                <div className="text-gray-800">Telefon</div>
-                <div className="font-bold text-sm">{tel}</div>
+                {tel === '' ? (
+                  <div>
+                  <div className="text-white">Telefon</div>
+                  <div className={`font-bold text-sm text-white`}>0000000</div>                  
+                </div>                
+                ) : (
+                  <div>
+                    <div className="text-gray-800">Telefon</div>
+                    <div className={`font-bold text-sm`}>{tel}</div>                  
+                  </div>
+                )}
               </div>
             </div>
           </div>

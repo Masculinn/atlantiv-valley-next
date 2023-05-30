@@ -9,12 +9,11 @@ function ContactUs() {
         <div>
           <Head>
             <title>Atlantic Valley | İletişime Geçin</title>
-            <meta name="description" content="" />
-            <meta property="og:title" content="My Page Title" />
-            <meta property="og:description" content="This is the description of my page." />
+            <meta name="description" content="BÜYÜRKEN YANINIZDAYIZ. Atlantic Valley Partners , küresel bir yönetim danışmanlığı firmasıdır. Önde gelen işletmelerin, hükümetlerin ve kurumların güvenilir danışmanıyız." />
+            <meta property="og:title" content="BÜYÜRKEN YANINIZDAYIZ" />
+            <meta name='robots' content='index, follow'></meta>
           </Head>
           <Header />
-
           <main>
             <ContactUsComponent />
           </main>

@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const Card = ({imgSrc, imgAlt, name, des, buttonName, link}) => {    
   return (
-      <div className='lg:w-1/2 md:w-full sm:w-full w-full h-auto bg-white lg:mx-12 shadow-2xl lg:scale-90 md:scale-90 scale-100'>
-        <Image src={imgSrc} alt={imgAlt} className=' object-center object-cover w-full h-80' />
+      <div className='lg:w-1/2 md:w-full sm:w-full w-full h-auto bg-white lg:mx-12 sm:my-24 my-36 lg:my-0 md:my-0 shadow-2xl lg:scale-90 md:scale-90 scale-100'>
+        <Image src={imgSrc} alt={imgAlt} className=' lg:object-center lg:object-cover object-cover md:object-cover w-full md:h-80 sm:h-auto lg:h-80 h-auto' />
         <h2 className='pt-6 text-2xl' id='section_font'>- {name} -</h2>
         <p className='px-8 text-sm lg:text-lg tracking-tight md:text-md pt-4' id='section_font'>{des}</p>
         <a href={link} rel="noreferrer" target='_blank'>

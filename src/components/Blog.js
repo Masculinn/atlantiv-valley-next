@@ -15,7 +15,7 @@ const BlogDiv = ({title, des, imgAlt, imgSource, sector, linkedinUrl}) => {
         <div className='w-full text-start h-1/6 text-black text-2xl px-8 py-4'>
         | {sector}
         </div>
-        <Image src={imgSource} className='h-auto w-full mx-auto transform transition-all duration-500 hover:scale-105 hover:translate-x-5 hover:translate-y-5 hover:shadow-2xl' alt={imgAlt} />
+        <Image src={imgSource} className='h-auto w-full mx-auto transform transition-all duration-500 hover:scale-105' alt={imgAlt} />
         </a>
       </div>
   )
@@ -46,13 +46,15 @@ const BlogDiv = ({title, des, imgAlt, imgSource, sector, linkedinUrl}) => {
       });
 
   return (
-    <animated.div className='w-full min-h-screen bg-slate-50 bg-opacity-50 flex flex-wrap justify-center items-center text-white' id='section_font' style={animation} ref={ref}>  
-        {props.blogs.map((val, key) => {
-            return <BlogDiv 
-            key={key}
-            {...val}
-            />
-        })}
+    <animated.div className='w-full min-h-screen bg-slate-50 bg-opacity-50' id='section_font' style={animation} ref={ref}>  
+        <div className='flex flex-wrap justify-center items-center text-white -mt-6'>
+          {props.blogs.map((val, key) => {
+              return <BlogDiv 
+              key={key}
+              {...val}
+              />
+          })}
+      </div>
     </animated.div>
   
   )

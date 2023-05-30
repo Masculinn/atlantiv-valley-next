@@ -7,7 +7,6 @@ import { useSpring, animated } from "react-spring";
 export default function Graph(val) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  // const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
