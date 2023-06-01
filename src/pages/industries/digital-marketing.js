@@ -29,6 +29,10 @@ export default function DigitalMarketing() {
             content: "index, follow"
           },
           {
+            name:"robots",
+            content: "index, follow-up"
+          },
+          {
             name:"geo.country",
             content: "TR",
           },
@@ -59,7 +63,7 @@ export default function DigitalMarketing() {
           {
             name:"twitter:video",
             content:"/incentive_video.mp4"
-            },
+          },
         ]
     const steps = [
         {
