@@ -5,6 +5,20 @@ import { useSpring, animated } from 'react-spring';
 import Image from 'next/image';
 
 const BlogDiv = ({title, des, imgAlt, imgSource, sector, linkedinUrl}) => {
+    const Loader = () => {
+      const [isLoad, setLoad] = useState(true);
+      return (
+        <div className='w-full h-auto'>
+          <center>
+              {isLoad && (
+                <span className="loader top-auto mt-20"></span> 
+              )
+              }
+              <Image src={imgSource} alt={imgAlt} className={`h-auto w-full mx-auto transform transition-all duration-500 hover:scale-105 ${isLoad ? 'opacity-0' : 'opacity-100'}`} onLoadingComplete={() => {setLoad(false)}}/>          
+          </center>
+        </div>
+      )
+    }
     return (
       <div className='w-full max-w-md h-full my-16 shadow-2xl mx-4 lg:mx-12 lg:w-1/4 text-black cursor-pointer' id='section_font'>
         <a href={linkedinUrl} rel="noreferrer" target='_blank'>
@@ -15,7 +29,7 @@ const BlogDiv = ({title, des, imgAlt, imgSource, sector, linkedinUrl}) => {
         <div className='w-full text-start h-1/6 text-black text-2xl px-8 py-4'>
         | {sector}
         </div>
-        <Image src={imgSource} className='h-auto w-full mx-auto transform transition-all duration-500 hover:scale-105' alt={imgAlt} />
+        <Loader />
         </a>
       </div>
   )

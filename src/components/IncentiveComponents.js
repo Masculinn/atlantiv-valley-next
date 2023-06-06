@@ -442,7 +442,7 @@ export default function GovernmentIncentive() {
                     <span className="loader lg:scale-1 md:scale-90 scale-75"></span>
                   </div>
                )}
-                  <video src={"/public_assets/incentive_video.mp4"} height={300} width={500} controls className='rounded-lg my-8'></video>
+                  <video src={"/public_assets/incentive_video.mp4"} height={300} width={500} controls className='rounded-lg my-8' content='Devlet Teşvikleri Nedir?'></video>
               </div>  
             <h2 className='text-5xl' id='arr'>↓</h2>
           </center>

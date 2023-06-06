@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-
+import Image from "next/image";
 import Slogan from "@/components/Slogan"
 import Entrance from "@/components/Entrance";
 import World from "@/components/World";
@@ -25,10 +25,6 @@ export default function HomePage() {
     {
       name:"description",
       content:"BÜYÜRKEN YANINIZDAYIZ. Atlantic Valley Partners , küresel bir yönetim danışmanlığı firmasıdır. ",
-    },
-    {
-      name:"keywords",
-      content: "Yatırım danışmanlığı Avrupa finans piyasaları portföy yönetimi Varlık yönetimi Yatırım stratejileri Risk yönetimi Yatırım fırsatları Piyasa analizi Hisse senedi piyasaları Tahvil ve bono piyasaları Döviz piyasaları Gayrimenkul yatırımları avrupa'da yatırım avrupa'da danışmanlık yatırım danışmanlığı  Avrupa'da şirket kurma danışmanlığı Avrupa'da iş kurma Şirket kurma süreci Avrupa'da şirket tescili Avrupa pazarına giriş Avrupa iş ortamı Yurtdışında şirket kurma Şirket kurulumu için danışmanlık hizmetleri Vergi avantajları Hukuki gereklilikler İş planı hazırlama Yatırım fırsatları Avrupa Uluslararası işletme hukuku Şirket türleri Bölgesel iş stratejileri Avrupa'da pazar araştırması Rekabet analizi İş büyütme stratejileri Avrupa'da pazarlama ve reklamcılık Yerel düzenlemeler ve uyumu Kurumsallaşma Şirket kuruluşu Şirketleşme süreci Avrupa'da şirket kurma Kurumsal yapının oluşturulması Şirket yönetimi Şirket hukuku Kurumsal finansman Kurumsal yönetim Şirket politikaları Kurumsal strateji Şirket büyütme Şirket satın alma şirket birleşme Şirket sınıflandırması Şirket belgelendirme Şirket tescili Avrupa iş dünyası Avrupa pazar analizi Kurumsallaşma danışmanlığı"
     },
     {
       name:"robots",
@@ -122,6 +118,7 @@ export default function HomePage() {
         imgAlt: "etsy"
       }
   ]
+
     return (
       <div>
         <Head>

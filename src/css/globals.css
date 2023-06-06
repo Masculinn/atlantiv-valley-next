@@ -16,8 +16,22 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.dark {
+  --bg-color: #000;
+  --text-color: #fff;
+}
 
+.light {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+.transition-colors {
+  transition-property: background-color, color;
+  transition-duration: 300ms;
+}
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   background-image: url('/public_assets/main-bg.jpg');
   background-size: cover;
   background-attachment: fixed;

@@ -18,7 +18,7 @@ const WhatsAppWidget = () => {
   return (
     <div className="relative z-50 h-auto ">
       <button
-        className="hover:scale-105 transition-transform duration-300 bg-green-600 rounded-full lg:h-16 lg:w-16 md:h-16 md:w-16 sm:h-12 sm:w-12 h-12 w-12 items-center justify-center flex"
+        className="hover:scale-105 transition-transform duration-300 bg-green-600 rounded-full lg:h-16 lg:w-16 md:h-16  md:w-16 sm:h-14 sm:w-14 h-14 w-14 items-center justify-center flex"
         onClick={redirectToWhatsApp}>
         <FaWhatsapp className='lg:h-12 lg:w-12 md:h-16 md:w-16 sm:h-12 sm:w-12 h-12 w-12 text-white' />
       </button>

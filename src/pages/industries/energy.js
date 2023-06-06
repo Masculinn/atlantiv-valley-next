@@ -23,25 +23,21 @@ export default function Energy() {
             content:"Avrupa'da gün geçtikçe büyüyen Yenilenebilir Enerji Dönüşümü ve aynı zamanda savaş sonrası gelişen Enerji ihtiyacında gelişen Kömür açığında aktif rol oynamaya çalışıyoruz.",
         },
         {
-            name:"keywords",
-            content:"Enerji danışmanlığı Enerji yönetimi Enerji verimliliği Sürdürülebilir enerji Enerji tasarrufu Yenilenebilir enerji Enerji stratejileri Enerji analitiği Enerji veri yönetimi Enerji tüketim optimizasyonu Enerji auditleri Enerji maliyet analizi Enerji sistemleri entegrasyonu Enerji etüdü Enerji politikaları Enerji kaynakları çeşitlendirme Karbon ayak izi azaltma Enerji sertifikasyonu Enerji regülasyonları Enerji proje yönetimi  Enerji Enerji sektörü Enerji kaynakları Yenilenebilir enerji Fosil yakıtlar Enerji verimliliği Enerji tasarrufu Enerji üretimi Elektrik Güneş enerjisi Rüzgar enerjisi Hidroelektrik enerji Nükleer enerji Biyokütle enerjisi Enerji politikaları Enerji piyasası Enerji tüketimi Enerji dağıtımı Enerji altyapısı Enerji dönüşümü Yatırım danışmanlığı Avrupa finans piyasaları portföy yönetimi Varlık yönetimi Yatırım stratejileri Risk yönetimi Yatırım fırsatları Piyasa analizi Hisse senedi piyasaları Tahvil ve bono piyasaları Döviz piyasaları Gayrimenkul yatırımları avrupa'da yatırım avrupa'da danışmanlık yatırım danışmanlığı  Avrupa'da şirket kurma danışmanlığı Avrupa'da iş kurma Şirket kurma süreci Avrupa'da şirket tescili Avrupa pazarına giriş Avrupa iş ortamı Yurtdışında şirket kurma Şirket kurulumu için danışmanlık hizmetleri Vergi avantajları Hukuki gereklilikler İş planı hazırlama Yatırım fırsatları Avrupa Uluslararası işletme hukuku Şirket türleri Bölgesel iş stratejileri Avrupa'da pazar araştırması Rekabet analizi İş büyütme stratejileri Avrupa'da pazarlama ve reklamcılık Yerel düzenlemeler ve uyum"  
-        },
-        {
             name:"robots",
             content: "index, follow"
-          },
-          {
+        },
+        {
             name:"geo.country",
             content: "TR",
-          },
-          {
+        },
+        {
             name:"geo.placename",
             content: "Turkey",
-          },          
-          {
+        },          
+        {
             name:"author",
             content: "Atlantic Valley Partners",
-          },  
+        },  
       ]
       const referances = [
         {

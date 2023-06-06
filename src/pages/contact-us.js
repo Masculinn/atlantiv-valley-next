@@ -11,7 +11,7 @@ function ContactUs() {
             <title>Atlantic Valley | İletişime Geçin</title>
             <meta name="description" content="BÜYÜRKEN YANINIZDAYIZ. Atlantic Valley Partners , küresel bir yönetim danışmanlığı firmasıdır. Önde gelen işletmelerin, hükümetlerin ve kurumların güvenilir danışmanıyız." />
             <meta property="og:title" content="BÜYÜRKEN YANINIZDAYIZ" />
-            <meta name='robots' content='index, follow'></meta>
+            <meta name='robots' content='index, follow' />
           </Head>
           <Header />
           <main>

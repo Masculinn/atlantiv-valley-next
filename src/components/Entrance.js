@@ -9,25 +9,25 @@ const Entrance = () => {
     { text: <p id="def">BÜYÜRKEN YANINIZDAYIZ</p>  ,delay: 200 },
   ];
   const items2 = [
-    {   text: <strong> Atlantic Valley Partners</strong>, delay:400  },
-    {   text: ", küresel bir" , delay:600  },
-    {   text: <strong>yönetim danışmanlığı</strong>, delay:800  },
-    {   text: " firmasıdır. Önde gelen işletmelerin, hükümetlerin ve kurumların ", delay:1000  },
-    {   text: <strong>güvenilir danışmanıyız.</strong>, delay:1300  },
+    {   text: <strong> Atlantic Valley Partners</strong>, delay:200  },
+    {   text: ", küresel bir" , delay:400  },
+    {   text: <strong>yönetim danışmanlığı</strong>, delay:600  },
+    {   text: " firmasıdır. Önde gelen işletmelerin, hükümetlerin ve kurumların ", delay:800  },
+    {   text: <strong>güvenilir danışmanıyız.</strong>, delay:1000  },
   ]
 
   const trail = useTrail(items.length, {
     from: { opacity: 0, transform: 'translatex(40px)' },
     to: { opacity: 1, transform: 'translateY(0)' },
-    config: { duration: 1500 },
-    delay: items.map((_, index) => index * 200),
+    config: { duration: 1000 },
+    delay: items.map((_, index) => index * 100),
   });
 
   const trail2 = useTrail(items2.length, {
     from: { opacity: 0, transform: 'translateY(40px)' },
     to: { opacity: 1, transform: 'translateY(0)' },
-    config: { duration: 700 },
-    delay: items2.map((_, index) => index * 200),
+    config: { duration: 400 },
+    delay: items2.map((_, index) => index * 100),
   });
   return (
     <div className="-mt-40">

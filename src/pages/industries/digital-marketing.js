@@ -16,21 +16,13 @@ import Graph from "@/components/Graph";
 
 export default function DigitalMarketing() {
     const seo = [
-            {
-                name:"description",
-                content: "Gelişen ve değişen yeni Dünya düzeninde kitlelere hitap etmenin en etkili yollarından birinin Dijital Pazarlama olduğunun farkındayız",
-            },
           {
-            name:"keywords",
-            content:"Dijital pazarlama Dijital strateji Dijital pazarlama ajansı Dijital pazarlama hizmetleri Dijital pazarlama stratejileri Dijital reklamcılık Sosyal medya pazarlama Arama motoru optimizasyonu (SEO) Arama motoru reklamcılığı (SEM) İçerik pazarlama E-posta pazarlama Sosyal medya yönetimi İnternet reklamcılığı Web analitiği Dönüşüm optimizasyonu Influencer pazarlama Marka bilinirliği Dijital kampanyalar Online itibar yönetimi Pazar segmentasyonu  Yatırım danışmanlığı Avrupa finans piyasaları portföy yönetimi Varlık yönetimi Yatırım stratejileri Risk yönetimi Yatırım fırsatları Piyasa analizi Hisse senedi piyasaları Tahvil ve bono piyasaları Döviz piyasaları Gayrimenkul yatırımları avrupa'da yatırım avrupa'da danışmanlık yatırım danışmanlığı  Avrupa'da şirket kurma danışmanlığı Avrupa'da iş kurma Şirket kurma süreci Avrupa'da şirket tescili Avrupa pazarına giriş Avrupa iş ortamı Yurtdışında şirket kurma Şirket kurulumu için danışmanlık hizmetleri Vergi avantajları Hukuki gereklilikler İş planı hazırlama Yatırım fırsatları Avrupa Uluslararası işletme hukuku Şirket türleri Bölgesel iş stratejileri Avrupa'da pazar araştırması Rekabet analizi İş büyütme stratejileri Avrupa'da pazarlama ve reklamcılık Yerel düzenlemeler ve uyum"  
+            name:"description",
+            content: "Gelişen ve değişen yeni Dünya düzeninde kitlelere hitap etmenin en etkili yollarından birinin Dijital Pazarlama olduğunun farkındayız",
           },
           {
             name:"robots",
             content: "index, follow"
-          },
-          {
-            name:"robots",
-            content: "index, follow-up"
           },
           {
             name:"geo.country",
@@ -59,10 +51,6 @@ export default function DigitalMarketing() {
           {
             property:"og:video:height",
             content:"630"
-          },
-          {
-            name:"twitter:video",
-            content:"/incentive_video.mp4"
           },
         ]
     const steps = [

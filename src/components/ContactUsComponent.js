@@ -45,15 +45,15 @@ const ContactUsComponent = () => {
                   <h2 className="text-4xl text-black" id="section_font">İletişim</h2>
                   <div className=" py-4 ">
                       <button onClick={redirectToWhatsApp} target="_blank" rel="noopener noreferrer" className=" flex items-center py-3">
-                        <FaWhatsapp  className=" text-sky-500 lg:h-8 lg:w-8 h-8 w-8 min-w-max min-h-max" />
+                        <FaWhatsapp className=" text-sky-500 lg:h-8 lg:w-8 h-8 w-8 min-w-max min-h-max" role="button" height={'2rem'} width={'2rem'}/>
                         <span className=" text-slate-500 text-md pl-2 hover:text-sky-900" id="section_font">{data.number}</span>  
                       </button>
                       <a href={`mailto:${data.hrefEmail}`} target="_blank" rel="noopener noreferrer" className=" flex items-center py-3">
-                        <MdEmail className=" text-sky-500 lg:h-8 lg:w-8 h-8 w-8 min-w-max min-h-max" />
+                        <MdEmail className=" text-sky-500 lg:h-8 lg:w-8 h-8 w-8 min-w-max min-h-max" height={'2rem'} width={'2rem'}/>
                         <span className=" text-slate-500 text-md pl-2 hover:text-sky-900" id="section_font">{data.email}</span>  
                       </a>
                       <a href={data.hrefLocation} target="_blank" rel="noopener noreferrer" className=" flex items-center py-3">
-                        <MdLocationOn  className=" text-sky-500 lg:h-8 lg:w-8 h-8 w-8 min-w-max min-h-max" />
+                        <MdLocationOn  className=" text-sky-500 lg:h-8 lg:w-8 h-8 w-8 min-w-max min-h-max" height={'2rem'} width={'2rem'}/>
                         <span className=" text-slate-500 text-md pl-2 hover:text-sky-900" id="section_font">{data.location}</span>  
                       </a>
                   </div>
