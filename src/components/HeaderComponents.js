@@ -82,7 +82,7 @@ export default function Header() {
         }}>
       <div className="flex items-center flex-shrink-0 ">
         <Link href={"/"}> 
-          <Image priority={false} src={Logo} alt='Atlantic Valley Partners Logo' className='ml-5 lg:w-44 lg:h-24 md:w-40 md:h-24 sm:h-12 sm:w-24 w-32 h-16' id='logo'/>
+          <Image priority={true} src={Logo} alt='Atlantic Valley Partners Logo' className='ml-5 lg:w-44 lg:h-24 md:w-40 md:h-24 sm:h-12 sm:w-24 w-32 h-16' id='logo'/>
         </Link>
       </div>
       <div className="flex lg:hidden">
