@@ -10,7 +10,7 @@ import Partners from "@/components/Partners";
 import Blog from "@/components/Blog";
 import ButtonUp from "@/components/ButtonUp";
 
-import Meeting4 from "../assets/images/blogs/Meeting4.jpg"
+import meeting4 from "../assets/images/blogs/Meeting4.jpg"
 import avrupadayatirim from "../assets/images/blogs/avrupadayatirim.png"
 import enerji1 from "../assets/images/blogs/enerji1.png"
 import masis from "../assets/images/sponsors/masislogo.png"
@@ -23,7 +23,7 @@ export default function HomePage() {
  const seo = [
     {
       name:"description",
-      content:"BÜYÜRKEN YANINIZDAYIZ. Atlantic Valley Partners , küresel bir yönetim danışmanlığı firmasıdır. ",
+      content:"BÜYÜRKEN YANINIZDAYIZ. Atlantic Valley Partners , küresel bir yönetim danışmanlığı firmasıdır",
     },
     {
       name:"robots",
@@ -48,7 +48,7 @@ export default function HomePage() {
         title: "Türkiye Ticaret Delegasyonu",
         des: "Turkey-Poland Trade Delegation & B2B Meeting toplantısına katılım sağladığımız için memnuniyet duyuyoruz.",
         imgAlt: "Atlantic Valley Avrupa'da yatırım",
-        imgSource: Meeting4,
+        imgSource: meeting4,
         sector: "Avrupa'da yatırım",
         linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7071437563806257153/"
       },
@@ -128,10 +128,14 @@ export default function HomePage() {
         </Head>
         <Script 
           async 
+          id="ga-script"
           src={"https://www.googletagmanager.com/gtag/js?id=G-R9FY9KSY4R"} 
           strategy="afterInteractive"
         />  
-        <Script strategy="afterInteractive">
+        <Script 
+          strategy="afterInteractive"
+          id="ga-script"
+        >
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -159,7 +163,7 @@ export default function HomePage() {
         <Stats />
         <div className="lg:w-full lg:hidden lg:h-48 md:hidden md:w-full sm:h-48 sm:w-full block w-full h-48"></div>
         <World /> 
-        <Blog blogs={...blogs}/>
+        <Blog blogs={blogs}/>
         <ButtonUp />
         <Footer />
       </div>
